@@ -19,6 +19,6 @@ A simple and user-friendly Recipe App to help you discover, save, and manage you
 
 ## Technologies Used
 
-- **Frontend** HTML, CSS, JavaScript  
+- HTML, CSS, JavaScript  
 
 
