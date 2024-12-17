@@ -1,4 +1,4 @@
-# RECIPE-APP# 🍳 Recipe App
+# RECIPE-APP
 
 A simple and user-friendly Recipe App to help you discover, save, and manage your favorite recipes effortlessly!
 
