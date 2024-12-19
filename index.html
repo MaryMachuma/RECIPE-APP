@@ -1,34 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe App</title>
-    <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe Website</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Recipe App</h1>
+  <div class="container">
+    <h1>Recipe App</h1>
 
-        <!-- Add Recipe Form -->
-        <div class="form-section">
-            <h3>Add New Recipe</h3>
-            <input type="text" id="recipe-title" placeholder="Recipe Title">
-            <textarea id="recipe-details" placeholder="Recipe Details"></textarea>
-            <button id="add-recipe">Add Recipe</button>
-        </div>
+    <!-- Add Recipe Section -->
+    <section id="add-recipe-section">
+      <h3>Add a Recipe</h3>
+      <input type="text" id="recipe-title" placeholder="Recipe Title">
+      <textarea id="recipe-details" placeholder="Recipe Details"></textarea>
+      <button id="add-recipe">Add Recipe</button>
+    </section>
 
-        <!-- Search Recipes -->
-        <div class="search-section">
-            <h3>Search Recipes</h3>
-            <input type="text" id="search-bar" placeholder="Search Recipes">
-        </div>
+    <!-- Recipe List Section -->
+    <section id="recipe-list-section">
+      <h3>Your Recipes</h3>
+      <ul id="recipe-list"></ul>
+    </section>
 
-        <!-- Recipe List -->
-        <h3>All Recipes</h3>
-        <ul id="recipe-list"></ul>
-    </div>
+    <!-- Search Recipes Locally -->
+    <section id="search-recipe-section">
+      <h3>Search Recipes Locally</h3>
+      <input type="text" id="search-bar" placeholder="Search by title">
+      <button id="search-button">Search</button>
+    </section>
 
-    <script src="index.js"></script>
+    <!-- Fetch Recipes From API -->
+    <section id="fetch-recipe-section">
+      <h3>Search Recipes from API</h3>
+      <input type="text" id="api-search-bar" placeholder="Search recipes from API">
+      <button id="fetch-button">Fetch Recipes</button>
+      <div id="msg" style="display: none;">No recipes found!</div>
+      <div id="api-results" class="recipe-items"></div>
+    </section>
+
+    <!-- Recipe Details -->
+    <section id="recipe-details-section">
+      <h3>Recipe Details</h3>
+      <div id="details"></div>
+    </section>
+  </div>
+
+  <script src="index.js"></script>
 </body>
 </html>
